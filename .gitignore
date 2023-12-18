@@ -133,7 +133,6 @@ venv.bak/
 .spyderproject
 .spyproject
 
-files/submissions/p*
 results/*
 # Rope project settings
 .ropeproject
@@ -162,4 +161,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-files/results/
+#files/results/
+#files/submissions/

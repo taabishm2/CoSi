@@ -33,3 +33,11 @@ Note: The code within the files must be syntactically valid since CoSi uses AST 
 The result csv contains a column to view differences between the code in two submissions. In general, to visualize the text-diff of two submissions, set the `SUBMISSIONS_ROOT_DIR` and `FILES_IN_SUBMISSION` fields in `.env`. Then execute `python3 display.py 'repoA' 'repoB'`, where `repoA` and `repoB` are student directories within the `SUBMISSIONS_ROOT_DIR`. This will open a browser window with a side-by-side comparison of all files from `FILES_IN_SUBMISSION` in the two repos.
 
 Note: If `repoA` and `repoB` are present in `SUBMISSIONS_ROOT_DIR`, the saved version of the files will be displayed. If any of the repo names passed is not saved locally, it will be cloned from git into `SUBMISSIONS_ROOT_DIR` first.
+
+Note: The script uses diffcheck.com public APIs to retreive the diff HTML (https://api.diffchecker.com/public/text). Use of diffcheck API must abide by their API terms.
+
+# Example
+An example submission is provided for which CoSi may be executed immediately.
+* To run CoSi for the example, execute `python3 CoSi.py`
+* To view the results, see the csv file generated in `results/`
+* To visualize the diff between the example submission pair, run `python3 display.py 'project-6-repo-B' 'project-6-repo-A'`

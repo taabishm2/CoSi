@@ -362,7 +362,7 @@ def calculate_structure_similarity(src1, src2):
     return jaccard_similarity(structure1, structure2)
 
 
-def Aconstruct_structure(node, level=0):
+def construct_structure(node, level=0):
     structure = []
     structure.append(type(node).__name__)
     for child in ast.iter_child_nodes(node):
