@@ -3,10 +3,10 @@ Code Similarity detection for Python files and Jupyter Notebooks
 
 Runs pairwise comparisons between Python code from .py and .ipynb files to determine:
 
-* Code similarity: Compares code contents after substituting variable names and running other normalizations. Uses a windowed, fingerprinting approach to come up with vector representations for the submissions, which are then compared using cosine similarity. Based primarily on http://theory.stanford.edu/~aiken/publications/papers/sigmod03.pdf.
-* Output similarity: Compares similarity between .ipynb output cells (again using the cosine similarity metric)
-* Variable similarity: Compares similarity between all variable names, including function and class names, using Jaccard similarity calculation.
-* Structure similarity: Compares the abstract syntax trees (ASTs) for different submissions using Jaccard similarity.
+* **Code similarity**: Compares code contents after substituting variable names and running other normalizations. Uses a windowed, fingerprinting approach to come up with vector representations for the submissions, which are then compared using cosine similarity. Based primarily on http://theory.stanford.edu/~aiken/publications/papers/sigmod03.pdf.
+* **Output similarity**: Compares similarity between .ipynb output cells (again using the cosine similarity metric)
+* **Variable similarity**: Compares similarity between all variable names, including function and class names, using Jaccard similarity calculation.
+* **Structure similarity**: Compares the abstract syntax trees (ASTs) for different submissions using Jaccard similarity.
 
 Note: The code within the files must be syntactically valid since CoSi uses AST parsing to extract code structure. 
 
