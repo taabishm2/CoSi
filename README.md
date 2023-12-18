@@ -1,5 +1,5 @@
 # cosi
-Code Similarity detection for Python files and Jupyter Notebooks
+Locally run code similarity detection for Python files and Jupyter Notebooks
 
 Runs pairwise comparisons between Python code from .py and .ipynb files to determine:
 
