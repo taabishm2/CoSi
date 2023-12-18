@@ -8,6 +8,19 @@ Runs pairwise comparisons between Python code from .py and .ipynb files to deter
 * **Variable similarity**: Compares similarity between all variable names, including function and class names, using Jaccard similarity calculation.
 * **Structure similarity**: Compares the abstract syntax trees (ASTs) for different submissions using Jaccard similarity.
 
+Example output:
+```json
+{
+  "repoA": "https://github.com/cs544-wisc/project-6-repo-A",
+  "repoB": "https://github.com/cs544-wisc/project-6-repo-B",
+  "code": 0.0258,
+  "variables": 0.357,
+  "output": 0.9634,
+  "struture": 0.7879,
+  "visualize": "python3 display.py 'bds-project6' 'professoryuribe'"
+}
+```
+
 Note: The code within the files must be syntactically valid since CoSi uses AST parsing to extract code structure. 
 
 ## Checking code similarity
