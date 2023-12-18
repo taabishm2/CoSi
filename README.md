@@ -17,7 +17,7 @@ Example output:
   "variables": 0.357,
   "output": 0.9634,
   "struture": 0.7879,
-  "visualize": "python3 display.py 'bds-project6' 'professoryuribe'"
+  "visualize": "python3 display.py 'project-6-repo-A' 'project-6-repo-B'"
 }
 ```
 
